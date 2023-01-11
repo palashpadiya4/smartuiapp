@@ -1,0 +1,174 @@
+<div class="candidate">Candidate Details </div>
+
+
+
+<div class="card1" layout-align="center center">
+
+  <div class="container">
+
+    <div class="title1"> Candidate Profile <br> <br></div>
+
+
+
+    <div *ngFor="let employee of employeelist">
+
+
+
+      Name :{{employee.name}} <br>
+
+      Contact No :{{employee.contactno}} <br>
+
+      Email : {{employee.email}} <br>
+
+      Current Company: {{employee.currentcompany}} <br>
+
+      Joining Location : {{employee.joininglocation}} <br>
+
+      Skill : {{employee.skill}} <br>
+
+      Tower : {{employee.tower}} <br>
+
+      Current Status :{{employee.currentstatus}}
+    </div>
+
+  </div>
+
+</div>
+
+<div class="card1">
+
+  <div class="container1">
+
+    <div class="title1">Feedback Information <br> <br></div>
+    <div *ngFor="let employee of feedbackifnolist">
+
+      L1 Panel Name : {{employee.L1panelname}} <br>
+
+      L1 Average Rating : {{employee.L1averagerating}} <br>
+
+      L2 Panel Name : {{employee.L2panelname}} <br>
+
+      L2 Average Rating : {{employee.L2averagerating}} <br><br>
+
+      <button mat-raised-button color="primary">View Evaluation Form</button>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="card1">
+
+  <div class="container">
+
+    <div class="title1">Candidate Experince <br> <br></div>
+    <div *ngFor="let employee of candidateexplist">
+      Total Exp : {{employee.totalexp}} <br>
+
+      Relevent Experince :{{employee.relevantexp}}<br>
+
+      Level based on Exp : {{employee.levelbasedonexp}} <br>
+
+      Proposed Grade : {{employee.proposedgrade}} <br>
+
+      Band Deviation : {{employee.banddeviation}} <br><br>
+
+
+      <button mat-raised-button color="primary">Download Resume</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="card1">
+
+  <div class="container1">
+
+    <div class="title1">CTC Details <br> <br></div>
+    <div *ngFor="let employee of ctcdetailslist">
+
+      Current CTC : {{employee.currentctc}} <br>
+
+      Expected CTC: {{employee.expectedctc}} <br>
+
+      Proposed/Offered CTC: {{employee.proposedofferedctc}} <br>
+
+      Proposed/Offered CTC in words: {{employee.proposedofferedctcinwords}} <br>
+
+      Average C1 CTC: {{employee.averagec1ctc}} <br>
+
+      Hike Percent: {{employee.hikepercent}} <br>
+
+      Thershhold value: {{employee.thresholdvalue}} <br>
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="card1">
+
+  <div class="container1">
+
+    <div class="title1">CTC History <br> <br></div>
+    <div *ngFor="let employee of ctchistorylist">
+
+      Offered CTC: {{employee.offeredctc}} <br>
+
+      Holding Offer: {{employee.holdingoffer}} <br>
+
+      Created By: {{employee.createdby}} <br>
+
+      Date & Time: {{employee.dateandtime}} <br>
+
+    </div>
+  </div>
+
+</div>
+
+
+<mat-dialog-actions>
+
+  
+  <div class="example-button-row">
+   <button _ngcontent-fxl-c42="" mat-raised-button="" color="success"
+    class="mdc-button mdc-button--raised mat-mdc-raised-button mat-success mat-mdc-button-base"
+    ng-reflect-color="success" style="
+top: 17px;
+"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+    <mat-icon _ngcontent-fxl-c42="" role="img"
+      class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true"
+      data-mat-icon-type="font">thumb_up</mat-icon><span class="mdc-button__label" (click)="openDialog()"> Approve
+    </span><span class="mat-mdc-focus-indicator"></span><span matripple="" class="mat-ripple mat-mdc-button-ripple"
+      ng-reflect-disabled="false" ng-reflect-trigger="[object HTMLButtonElement]"></span><span
+      class="mat-mdc-button-touch-target"></span>
+  </button>
+    <button _ngcontent-yia-c56="" _ngcontent-ori-c56="" _ngcontent-ngd-c42="" mat-raised-button="" color="warn"
+        aria-label="Example fab with a heart icon" ng-reflect-color="warn"
+        class="mdc-button mdc-button--raised mat-mdc-raised-button mat-warn mat-mdc-button-base"
+        style="left: 130px;bottom: 20px;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+        <mat-icon _ngcontent-yia-c56="" role="img" _ngcontent-ori-c56="" _ngcontent-ngd-c42="" aria-hidden="true"
+            data-mat-icon-type="font"
+            class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color">thumb_down</mat-icon>
+        <span class="mdc-button__label"><span _ngcontent-yia-c56=""
+                class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span _ngcontent-yia-c56=""
+                class="mdc-button__label"><span _ngcontent-yia-c56="" _ngcontent-ori-c56=""
+                    class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span _ngcontent-yia-c56=""
+                    _ngcontent-ori-c56="" class="mdc-button__label"><span _ngcontent-yia-c56=""
+                        _ngcontent-ori-c56="" _ngcontent-ngd-c42=""   (click)="openDialogreject()">Reject</span></span><span _ngcontent-yia-c56=""
+                    _ngcontent-ori-c56="" class="mat-mdc-focus-indicator"></span><span _ngcontent-yia-c56=""
+                    _ngcontent-ori-c56="" matripple="" ng-reflect-disabled="false"
+                    ng-reflect-trigger="[object HTMLButtonElement]"
+                    class="mat-ripple mat-mdc-button-ripple"></span><span _ngcontent-yia-c56=""
+                    _ngcontent-ori-c56="" class="mat-mdc-button-touch-target"></span></span><span
+                _ngcontent-yia-c56="" class="mat-mdc-focus-indicator"></span><span _ngcontent-yia-c56=""
+                matripple="" ng-reflect-disabled="false" ng-reflect-trigger="[object HTMLButtonElement]"
+                class="mat-ripple mat-mdc-button-ripple"></span><span _ngcontent-yia-c56=""
+                class="mat-mdc-button-touch-target"></span></span><span class="mat-mdc-focus-indicator"></span><span
+            matripple="" class="mat-ripple mat-mdc-button-ripple" ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"></span><span class="mat-mdc-button-touch-target"></span>
+    </button>
+  </div>
+</mat-dialog-actions>
